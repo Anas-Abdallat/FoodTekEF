@@ -1,3 +1,4 @@
+using FoodTekEF.Context;
 using FoodTekEF.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<FoodTekContext>();
+builder.Services.AddDbContext<FoodTekDbContext>();
 
 var app = builder.Build();
 
