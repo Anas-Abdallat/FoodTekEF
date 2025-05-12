@@ -23,9 +23,7 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Helper\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Interface\" />
-    <Folder Include="Context\" />
     <Folder Include="Service\" />
   </ItemGroup>
 
