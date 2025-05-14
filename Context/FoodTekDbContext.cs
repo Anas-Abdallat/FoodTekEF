@@ -11,7 +11,6 @@ namespace FoodTekEF.Context
         { 
         
         }
-         // configure - mark person class as table in database
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ClientLocation> ClientLocations { get; set; }
