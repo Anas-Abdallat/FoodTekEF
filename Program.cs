@@ -1,5 +1,6 @@
 using FoodTekEF.Context;
 using FoodTekEF.Entities;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<FoodTekDbContext>();
+builder.Services.AddDbContext<FoodTekDbContext>(op => op.UseSqlServer("Data Source=DESKTOP-TAISUD8\\SQL2017;Initial Catalog=FoodTek;Integrated Security=True;Encrypt=True;Trust Server Certificate=True"));
 
 var app = builder.Build();
 
